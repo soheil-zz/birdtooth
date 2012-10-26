@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <IOBluetooth/IOBluetooth.h>
 
 @implementation AppDelegate
 
@@ -17,15 +16,33 @@
         exit(-1);
     }
     NSString *mac = [self getBTMacAddressFromCommandLineArguments];
-
-    IOBluetoothDevice *dev = [IOBluetoothDevice deviceWithAddressString:mac];
+    dev = [IOBluetoothDevice deviceWithAddressString:mac];
     [dev performSDPQuery:self];
 
-    [NSTimer scheduledTimerWithTimeInterval: 9
-                                  target: self
-                                selector: @selector(timeout)
-                                userInfo: nil
-                                 repeats: NO];
+    // sdpQueryComplete sometimes isn't called
+    [NSTimer scheduledTimerWithTimeInterval: .3
+                                     target: self
+                                   selector: @selector(getRSSI)
+                                   userInfo: nil
+                                    repeats: NO];
+
+    // timeout eventually
+    [NSTimer scheduledTimerWithTimeInterval: 5
+                                     target: self
+                                   selector: @selector(timeout)
+                                   userInfo: nil
+                                    repeats: NO];
+}
+
+- (void)getRSSI
+{
+    int rssi = [dev rawRSSI];
+    // allow another call getRSSI or let sdpQueryComplete finish or hit timeout
+    if (rssi > 0) {
+        return;
+    }
+    printf("%d\n", rssi);
+    exit(0);
 }
 
 - (void)timeout
