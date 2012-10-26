@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B10FD24163A244100B75D60"
-               BuildableName = "birdtooth"
+               BlueprintIdentifier = "5BD48B53163A5FCE000C2874"
+               BuildableName = "birdtooth.app"
                BlueprintName = "birdtooth"
                ReferencedContainer = "container:birdtooth.xcodeproj">
             </BuildableReference>
@@ -32,8 +32,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B10FD24163A244100B75D60"
-            BuildableName = "birdtooth"
+            BlueprintIdentifier = "5BD48B53163A5FCE000C2874"
+            BuildableName = "birdtooth.app"
             BlueprintName = "birdtooth"
             ReferencedContainer = "container:birdtooth.xcodeproj">
          </BuildableReference>
@@ -51,8 +51,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B10FD24163A244100B75D60"
-            BuildableName = "birdtooth"
+            BlueprintIdentifier = "5BD48B53163A5FCE000C2874"
+            BuildableName = "birdtooth.app"
             BlueprintName = "birdtooth"
             ReferencedContainer = "container:birdtooth.xcodeproj">
          </BuildableReference>
@@ -69,8 +69,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B10FD24163A244100B75D60"
-            BuildableName = "birdtooth"
+            BlueprintIdentifier = "5BD48B53163A5FCE000C2874"
+            BuildableName = "birdtooth.app"
             BlueprintName = "birdtooth"
             ReferencedContainer = "container:birdtooth.xcodeproj">
          </BuildableReference>
