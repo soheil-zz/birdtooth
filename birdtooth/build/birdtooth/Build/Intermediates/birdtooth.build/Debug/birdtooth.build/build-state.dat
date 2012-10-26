@@ -1,0 +1,71 @@
+Tbirdtooth
+v5
+r1
+cCheck dependencies
+cCompileC build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o /Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtooth normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000507625C600000000000000AA
+t1349920198
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000505F6A720000000000080504
+t1348430450
+s525572
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c00000000505F6A720000000000000B8F
+t1348430450
+s2959
+
+N/Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c
+c000000005089ECC20000000000000133
+t1351216322
+s307
+i<CoreFoundation/CoreFoundation.h>
+
+N/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/birdtooth.LinkFileList
+c000000005089EE5C000000000000008D
+t1351216732
+s141
+
+N/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtooth
+t2
+s0
+
+CBuild AST from /Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesaccafedb253ab641^5da305dc253ab641^---0#1#0#--18"Check dependencies36"E3C1FD73-8FB7-4A79-8F7D-8A36BB3D2ECE-
+
+CCompileC build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o /Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s372909532.024888
+e372909532.074149
+r1
+xCompileC
+xbuild/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o
+x/Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Volumes/untitled/birdtooth/birdtooth/birdtooth/main.ce77306dc253ab641^f4fb12dc253ab641^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c0000000000000000^2864"CompileC build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o birdtooth/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/untitled/birdtooth/birdtooth    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/birdtooth-generated-files.hmap -I/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/birdtooth-own-target-headers.hmap -I/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/birdtooth-all-target-headers.hmap -iquote /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/birdtooth-project-headers.hmap -I/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/DerivedSources/x86_64 -I/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/DerivedSources -F/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug -MMD -MT dependencies -MF /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.dia -c /Volumes/untitled/birdtooth/birdtooth/birdtooth/main.c -o /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/main.o36"E689DCEE-2DC0-4C02-8F5B-A14E9F5E384E-
+
+CLd /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtooth normal x86_64
+s372909532.081810
+e372909532.097389
+r1
+xLd
+x/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtooth
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Link /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtoothda0315dc253ab641^afee18dc253ab641^---0#0#0#--830"Ld build/birdtooth/Build/Products/Debug/birdtooth normal x86_64    cd /Volumes/untitled/birdtooth/birdtooth    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug -F/Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug -filelist /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Intermediates/birdtooth.build/Debug/birdtooth.build/Objects-normal/x86_64/birdtooth.LinkFileList -mmacosx-version-min=10.7 -framework CoreFoundation -o /Volumes/untitled/birdtooth/birdtooth/build/birdtooth/Build/Products/Debug/birdtooth36"548AC6DE-8634-4FF0-B8FB-F16732DC9FA8-
+
