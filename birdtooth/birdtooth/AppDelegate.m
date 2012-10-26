@@ -21,7 +21,7 @@
     IOBluetoothDevice *dev = [IOBluetoothDevice deviceWithAddressString:mac];
     [dev performSDPQuery:self];
 
-    [NSTimer scheduledTimerWithTimeInterval: 4
+    [NSTimer scheduledTimerWithTimeInterval: 9
                                   target: self
                                 selector: @selector(timeout)
                                 userInfo: nil
