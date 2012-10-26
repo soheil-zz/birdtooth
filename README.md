@@ -5,6 +5,6 @@ Provides the range(RSSI) for a nearby bluetooth device based on its bluetooth Ma
 Usage
 =====
 
-`birdtooth xxxxxxxxxxxx`
+`birdtooth xx-xx-xx-xx-xx-xx`
 
-the argument is the 12 character Mac address of the bluetooth device in hex format.
+the argument is the dash-delimited Mac address of the bluetooth device in hex format.

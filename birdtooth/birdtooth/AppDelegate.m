@@ -13,8 +13,39 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    IOBluetoothDevice *dev = [IOBluetoothDevice deviceWithAddressString:@"60-33-4b-ef-8b-25"];
+    if (![self validateArguments]) {
+        exit(-1);
+    }
+    NSString *mac = [self getBTMacAddressFromCommandLineArguments];
+
+    IOBluetoothDevice *dev = [IOBluetoothDevice deviceWithAddressString:mac];
     [dev performSDPQuery:self];
+}
+
+- (BOOL)validateArguments
+{
+    char *usage = "\n\nusage: birdtooth xx-xx-xx-xx-xx-xx\n";
+    NSArray *arguments = [[NSProcessInfo processInfo] arguments];
+
+    if ([arguments count] < 2) {
+        printf("No argument provided.%s", usage);
+        return NO;
+    }
+    NSString *mac = arguments[1];
+    char *cMac = (char *)malloc(sizeof(char) * [mac lengthOfBytesUsingEncoding:NSUTF8StringEncoding] + 1);
+    strcpy(cMac, [mac cStringUsingEncoding:NSUTF8StringEncoding]);
+    if ([mac length] != 17) {
+        printf("Invalid argument provided: %s%s", cMac, usage);
+        return NO;
+    }
+
+    return YES;
+}
+
+- (NSString *)getBTMacAddressFromCommandLineArguments
+{
+    NSArray *arguments = [[NSProcessInfo processInfo] arguments];
+    return arguments[1];
 }
 
 - (void)sdpQueryComplete:(IOBluetoothDevice *)device status:(IOReturn)status
