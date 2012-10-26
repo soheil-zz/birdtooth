@@ -20,6 +20,20 @@
 
     IOBluetoothDevice *dev = [IOBluetoothDevice deviceWithAddressString:mac];
     [dev performSDPQuery:self];
+
+    [NSTimer scheduledTimerWithTimeInterval: 4
+                                  target: self
+                                selector: @selector(timeout)
+                                userInfo: nil
+                                 repeats: NO];
+}
+
+- (void)timeout
+{
+    // we have not exited yet that means we haven't got a response yet
+    // so go ahead and exit now
+    printf("0\n");
+    exit(0);
 }
 
 - (BOOL)validateArguments
