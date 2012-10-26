@@ -11,6 +11,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
+    int rssiSum;
+    int rssiCnt;
     IOBluetoothDevice *dev;
 }
 

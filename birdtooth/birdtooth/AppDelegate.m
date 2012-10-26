@@ -26,6 +26,13 @@
                                    userInfo: nil
                                     repeats: NO];
 
+    // minimum wait
+    [NSTimer scheduledTimerWithTimeInterval: 2
+                                     target: self
+                                   selector: @selector(timeout)
+                                   userInfo: nil
+                                    repeats: NO];
+
     // timeout eventually
     [NSTimer scheduledTimerWithTimeInterval: 5
                                      target: self
@@ -34,15 +41,21 @@
                                     repeats: NO];
 }
 
-- (void)getRSSI
+- (void)exitWithAvgRSSI
 {
-    int rssi = [dev rawRSSI];
-    // allow another call getRSSI or let sdpQueryComplete finish or hit timeout
-    if (rssi > 0) {
+    int rssiAvg = (int)rssiSum / rssiCnt;
+    // let sdpQueryComplete finish or hit timeout
+    if (rssiAvg > 0) {
         return;
     }
-    printf("%d\n", rssi);
+    printf("%d\n", rssiAvg);
     exit(0);
+}
+
+- (void)getRSSI
+{
+    rssiSum = [dev rawRSSI];
+    rssiCnt++;
 }
 
 - (void)timeout
