@@ -29,7 +29,7 @@
     // minimum wait
     [NSTimer scheduledTimerWithTimeInterval: 2
                                      target: self
-                                   selector: @selector(timeout)
+                                   selector: @selector(exitWithAvgRSSI)
                                    userInfo: nil
                                     repeats: NO];
 
